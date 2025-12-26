@@ -5,7 +5,26 @@
   <title>Portfolio Nhóm 7</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("expanded");
+    sidebar.classList.toggle("collapsed");
+  }
+</script>
+
 <body>
+<div class="sidebar collapsed" id="sidebar">
+  <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+  <a href="#members">Thành viên</a>
+  <a href="#mentors">Người hướng dẫn</a>
+  <a href="#overview">Tổng quan DN</a>
+  <a href="#products">Sản phẩm</a>
+  <a href="#business">Mô hình KD</a>
+  <a href="#combo">Combo sản phẩm</a>
+  <a href="#video">Video sản phẩm</a>
+</div>
 
 <header class="hero">
   <div class="hero-overlay">
@@ -13,7 +32,7 @@
     <h1>XÂY DỰNG CHƯƠNG TRÌNH</h1>
     <h2>XÚC TIẾN BÁN CHO SẢN PHẨM THIẾT BỊ BẾP</h2>
     <p class="hero-course">
-      Dự án thuộc học phần Thực hành dự án kinh doanh (KTE507)
+      Nhóm 7 - Dự án thuộc học phần Thực hành dự án kinh doanh (KTE507)
     </p>
     <a href="asset/THDA NHÓM 7 - SLIDE (gắn link trên port cho mn nhấp vào xem là được) (1).pdf"
        target="_blank"
@@ -21,14 +40,15 @@
       📄 Xem slide dự án
     </a>
   </div>
-</header>   
-
-  </div>
 </header>
 
 
+
+
+<div class="main-content">
 <!-- 1. THÀNH VIÊN -->
-<section class="section">
+
+<section class="section" id="members">
   <h2>👥 Thành viên nhóm</h2>
 
   <div class="members">
@@ -40,7 +60,7 @@
     </div>
     <div class="member">
       <img src="asset/Nguyễn Phúc Ánh - 2214610016.jpg">
-      <h4>Nguyễn Phúc Anhs</h4>
+      <h4>Nguyễn Phúc Ánh</h4>
       <p></p>
      
     </div>
@@ -72,7 +92,7 @@
   </div>
 </section>
 <!-- NGƯỜI HƯỚNG DẪN -->
-<section class="section advisor">
+<section class="section advisor" id="mentors">
   <h2>🎓 Người hướng dẫn</h2>
 
   <div class="advisor-list">
@@ -90,7 +110,7 @@
 </section>
 
 <!-- 2. TỔNG QUAN DOANH NGHIỆP -->
-<section class="section company">
+<section class="section company" id="overview">
   <div class="company-text">
     <h2>🏢 Tổng quan doanh nghiệp</h2>
 
@@ -112,7 +132,7 @@
 </section>
 
 <!-- 3. TỔNG QUAN SẢN PHẨM -->
-<section class="section">
+<section class="section" id="products">
   <h2>📦 Tổng quan sản phẩm</h2>
 
   <div class="table-wrapper">
@@ -154,7 +174,7 @@
 </section>
 
 <!-- 4. MÔ HÌNH KINH DOANH -->
-<section class="section">
+<section class="section" id="business">
   <h2>📊 Mô hình kinh doanh</h2>
 
   <div class="images">
@@ -164,18 +184,18 @@
 </section>
 
 <!-- 5. COMBO SẢN PHẨM -->
-<section class="section">
+<section class="section" id="combo">
   <h2>📦 Combo sản phẩm</h2>
 
-  <div class="images">
+  <div class="images combo-images">
     <img src="asset/COMBO GIA ĐÌNH TIỆN NGHI.png">
     <img src="asset/COMBO SETUP BẾP SANG CHUẨN CHÂU ÂU.png">
     <img src="asset/COMBO TỐI ƯU.png">
   </div>
 </section>
 <!-- ===== VIDEO SẢN PHẨM ===== -->
-<section class="section video-section">
-  <h2>Video giới thiệu sản phẩm</h2>
+<section class="section video-section" id="video">
+  <h2>Video giới thiệu dự án</h2>
 
   <div class="video-wrapper">
     <video controls>
@@ -184,7 +204,7 @@
     </video>
   </div>
 </section>
-
+</div>
 
 <footer>
   <p>© 2025 – Portfolio Nhóm 7 </p>
